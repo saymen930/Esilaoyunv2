@@ -456,7 +456,7 @@ bot.action('start', ctx=>{
 
 bot.action('vip', ctx=>{
     ctx.deleteMessage()
-    ctx.replyWithMarkdown(`**`,{
+    ctx.replyWithMarkdown(`*diğer bölüm*`,{
         reply_markup:{
             inline_keyboard:[
                 [{text:'🇦🇿 botlarımız', callback_data:'AZ'}],
