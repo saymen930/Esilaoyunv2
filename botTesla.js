@@ -433,7 +433,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Sahip 🧑🏻‍💻', url:`t.me/esilabotbilgilendirme`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
+                [{text:'Sahip 🧑🏻‍💻', url:`t.me/debubluman`},{text:'diğerleri', callback_data:'vip'}]
             ]
         }
     })
@@ -446,7 +446,7 @@ bot.action('start', ctx=>{
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Resmi Kanalımız 📣', url:`t.me/esilabotbilgilendirme`},{text:'VİP Gruplar 💎', callback_data:'vip'}]
+                [{text:'Resmi Kanalımız 📣', url:`t.me/esilabotbilgilendirme`},{text:'diğerleri', callback_data:'vip'}]
             ]
         }
     })
@@ -468,7 +468,7 @@ bot.action('diğerleri', ctx=>{
 })
 
 // AZƏRBAYCAN GRUP DÜYMƏLƏRİ
-bot.action('AZ', ctx=>{
+bot.action('Bot', ctx=>{
     ctx.deleteMessage()
     ctx.replyWithMarkdown(`*botlar*`,{
         reply_markup:{
@@ -482,7 +482,7 @@ bot.action('AZ', ctx=>{
 })
 
 // TÜRK GRUP DÜYMƏLƏRİ
-bot.action('TR', ctx=>{
+bot.action('Group', ctx=>{
     ctx.deleteMessage()
     ctx.replyWithMarkdown(`
 *Grup ve Kanal*
