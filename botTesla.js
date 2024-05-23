@@ -433,7 +433,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Sahip 🧑🏻‍💻', url:`t.me/debubluman`},{text:'diğerleri', callback_data:'vip'}]
+                [{text:'Sahip 🧑🏻‍💻', url:`t.me/debubluman`},{text:'Diğerleri', callback_data:'vip'}]
             ]
         }
     })
@@ -446,7 +446,7 @@ bot.action('start', ctx=>{
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Grupa Ekle ✅', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Resmi Kanalımız 📣', url:`t.me/esilabotbilgilendirme`},{text:'diğerleri', callback_data:'vip'}]
+                [{text:'Resmi Kanalımız 📣', url:`t.me/esilabotbilgilendirme`},{text:'Diğerleri', callback_data:'vip'}]
             ]
         }
     })
@@ -454,7 +454,7 @@ bot.action('start', ctx=>{
 
 
 
-bot.action('diğerleri', ctx=>{
+bot.action('vip', ctx=>{
     ctx.deleteMessage()
     ctx.replyWithMarkdown(`**`,{
         reply_markup:{
@@ -468,7 +468,7 @@ bot.action('diğerleri', ctx=>{
 })
 
 // AZƏRBAYCAN GRUP DÜYMƏLƏRİ
-bot.action('Bot', ctx=>{
+bot.action('AZ', ctx=>{
     ctx.deleteMessage()
     ctx.replyWithMarkdown(`*botlar*`,{
         reply_markup:{
@@ -482,7 +482,7 @@ bot.action('Bot', ctx=>{
 })
 
 // TÜRK GRUP DÜYMƏLƏRİ
-bot.action('Group', ctx=>{
+bot.action('TR', ctx=>{
     ctx.deleteMessage()
     ctx.replyWithMarkdown(`
 *Grup ve Kanal*
