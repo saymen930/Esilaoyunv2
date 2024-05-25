@@ -79,7 +79,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Merhaba, ben yaş tahmin oyun botuyum 😆*\n\n_Grubuna ekle ve eğlenmeye başla:D_ ~👇Komutlar tuşu aşağıda👇~
+    *Merhaba, ben esila oyun botuyum 😆*\n\n_Grubuna ekle ve eğlenmeye başla:D_ ~👇Komutlar tuşu aşağıda👇~
     ${isGroup ? "" : ""}
 `)
 
@@ -439,7 +439,7 @@ bot.start(async (ctx) => {
 
 bot.action('start', ctx=>{
     
-    ctx.editMessageText(`*Merhaba, ben yaş tahmin oyun botuyum 😆*\n\n_Grubuna ekle ve eğlenmeye başla:D_ ~👇Komutlar tuşu aşağıda👇~
+    ctx.editMessageText(`*Merhaba, esila oyun botuyum 😆*\n\n_Grubuna ekle ve eğlenmeye başla:D_ ~👇Komutlar tuşu aşağıda👇~
         `,{
         parse_mode: "Markdown",
         reply_markup:{
@@ -457,8 +457,8 @@ bot.action('kanals', (ctx) => {
         parse_mode: "Markdown",
         reply_markup:{
             inline_keyboard:[
-                [{text:'Kanal 🇹🇷', url:`t.me/yasgamerobotchannel`}],
-                [{text:'Chat 🇹🇷', url:`t.me/yasgamerobotchat`}],
+                [{text:'Kanal 🇹🇷', url:`t.me/esilabotbilgilendirme `}],
+                [{text:'Chat 🇹🇷', url:`t.me/sorundestekk`}],
                 [{text:'Azerbaycan Kanalları 🇦🇿', callback_data:`azer`}],
                 [{text:'Geri 🔙', callback_data:`start`}]
                 ]}})
