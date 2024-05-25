@@ -397,11 +397,10 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 
 
-bot.command("yardim", (ctx) => {}
-    return ctx.replyWithMarkdown(Degisken(`
-        *Merhaba! oyun için\noluşturulmuş bir botum🤖*\n🆘*Ojemin Rengine bak Bu Íşi Bize Bırak💅🏻!*\n\n_ℹ️Kurallar budur : Sana resimler atıyorum ve sen kategoriye uyğun rakamlarla tahmin etmelisin🕵🏼‍♂️,İlk olarak qrupa ekle ve Grupda medya izini açık olsun unutma! veya Botu yönetici yapın_🗣\n_Sonra Komutlarla ile oyunu başladın_🎯\n
-          *Temel Komutların Listesi👇🏻*\n\n🎲 /game - _Oyunu Başlat_\n⛔️ /stop - _Oyunu durdurmak_\n📊 /top - _Oyuncuların puanı gösterir_\n_🌍 /g - Global Puanlar_\nℹ️ /yardim - _Size yardım edicek_\n👤 /kullanici - _Kullanıcı hakkında bilgi_\n🆔 /id - _Grup infosu_`))
-})
+bot.command("yardim", (ctx) => {
+    return
+ ctx.replyWithMarkdown(`Merhaba! Oyun için oluşturulmuş bir botum 🤖\n🆘 Ojemin Rengine bak Bu İşi Bize Bırak 💅🏻!\n\nℹ️ Kurallar budur: Sana resimler atıyorum ve sen kategoriye uygun rakamlarla tahmin etmelisin 🕵🏼‍♂️. İlk olarak gruba ekle ve grup medya izinlerini açık bırakmayı unutma! Veya botu yönetici yapın. Sonra komutlarla oyunu başlatın:\n\n🎲 /game - Oyunu Başlat\n⛔️ /stop - Oyunu durdurmak\n📊 /top - Oyuncuların puanını gösterir\n🌍 /g - Global Puanlar\nℹ️ /yardim - Size yardım eder\n👤 /kullanici - Kullanıcı hakkında bilgi\n🆔 /id - Grup bilgisi`);
+});
 
 bot.command("kullanici", async (ctx) => {
     const Id = ctx.message.reply_to_message ? ctx.message.reply_to_message.from.id : ctx.message.from.id;
