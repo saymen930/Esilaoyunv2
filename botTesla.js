@@ -345,15 +345,15 @@ ${top.sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${[
 				`))
 			}
 			else {
-				ctx.reply("❗️ Benimle hiç oyun oynamadınız🥺")
+				ctx.reply('❗️ Benimle hiç oyun oynamadınız🥺')
 			}
 		}
 		else {
-			ctx.reply("👩🏻 Ay Bunaldım yeter grupta kullan şunu😡")
+			ctx.reply('👩🏻 Ay Bunaldım yeter grupta kullan şunu😡')
 		}
 	}
 	else {
-		ctx.reply("👩🏻 Ay Bunaldım yeter grupta kullan şunu😡")
+		ctx.reply('👩🏻 Ay Bunaldım yeter grupta kullan şunu😡')
 	}
 })
 /// /// /// /// /// /// ///  <!-- GRUB KULLANICI RATING SON --> /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// 
