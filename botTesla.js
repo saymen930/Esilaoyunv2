@@ -399,7 +399,7 @@ ${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `$
 
 bot.command("yardim", (ctx) => {
     return
- ctx.replyWithMarkdown(`Merhaba! Oyun için oluşturulmuş bir botum 🤖\n🆘 Ojemin Rengine bak Bu İşi Bize Bırak 💅🏻!\n\nℹ️ Kurallar budur: Sana resimler atıyorum ve sen kategoriye uygun rakamlarla tahmin etmelisin 🕵🏼‍♂️. İlk olarak gruba ekle ve grup medya izinlerini açık bırakmayı unutma! Veya botu yönetici yapın. Sonra komutlarla oyunu başlatın:\n\n🎲 /game - Oyunu Başlat\n⛔️ /stop - Oyunu durdurmak\n📊 /top - Oyuncuların puanını gösterir\n🌍 /g - Global Puanlar\nℹ️ /yardim - Size yardım eder\n👤 /kullanici - Kullanıcı hakkında bilgi\n🆔 /id - Grup bilgisi`);
+ ctx.replyWithMarkdown(`Merhaba! Oyun için oluşturulmuş bir botum 🤖\n🆘 Ojemin Rengine bak Bu İşi Bize Bırak 💅🏻!\n\nℹ️ Kurallar budur: Sana resimler atıyorum ve sen kategoriye uygun rakamlarla tahmin etmelisin 🕵🏼‍♂️. İlk olarak gruba ekle ve grup medya izinlerini açık bırakmayı unutma! Veya botu yönetici yapın. Sonra komutlarla oyunu başlatın:\n\n🎲 /game - Oyunu Başlat\n⛔️ /stop - Oyunu durdurmak\n📊 /top - Oyuncuların puanını gösterir\n🌍 /g - Global Puanlar\nℹ️ /yardim - Size yardım eder\n👤 /kullanici - Kullanıcı hakkında bilgi\n🆔 /id - Grup bilgisi');
 });
 
 bot.command("kullanici", async (ctx) => {
