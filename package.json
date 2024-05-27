@@ -30,3 +30,24 @@
   "author": "t.me/HusnuEhedov",
   "license": "ISC"
 }
+
+{
+  "name": "ship-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot with ship feature",
+  "main": "ship.js",
+  "dependencies": {
+    "telegraf": "^4.4.2",
+    "dotenv": "^10.0.0"
+  },
+  "scripts": {
+    "start": "node ship.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "ship"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}
