@@ -3,7 +3,7 @@
   "description": " @TeslaGameBot'un Eski Alt Versiyon Projesi GitHub'da Kullanıcılara Açık Sunuldu.",
   "repository": "https://github.com/sirincay/TeslaGamev1",
   "logo": "https://avatars.githubusercontent.com/u/88708263?s=96&v=4",
-  "keywords": ["telegram", "bot"],
+  "keywords": ["telegram", "bot" "ship"],
   "env": {
     "TOKEN": {
       "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
@@ -35,5 +35,21 @@
     "worker": {
       "quantity": 1
     }
+  }
+}
+"env": {
+    "TOKEN": {
+      "description": "Telegram botunuzun tokeni.",
+      "value": ""
+    }
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
